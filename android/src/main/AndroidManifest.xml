@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="maugost.com.paystackflutter">
+
+    <application>
+        <activity android:name=".PayStackMainActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".creditcarddesign.CardEditActivity"
+            android:theme="@style/AppTheme1"/>
+    </application>
+</manifest>
