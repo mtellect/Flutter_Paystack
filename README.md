@@ -9,13 +9,30 @@ For help getting started with Flutter, view our online
 
 For help on editing plugin code, view the [documentation](https://flutter.io/platform-plugins/#edit-code).
 
+## Screenshots
+<img src="sc1.png" height="300em" /> <img src="sc2.png" height="300em" />  <img src="sc3.png" height="300em" /> <img src="sc4.png" height="300em" /> <img src="sc5.png" height="300em" /> <img src="sc6.png" height="300em" /> <img src="sc7.png" height="300em" />
+
+## Usage
+
+[Example](https://github.com/iampawan/Flutter-Walkthrough/blob/master/example/example_app.dart)
+
+To use this package :
+
+* add the dependency to your [pubspec.yaml](https://github.com/iampawan/Flutter-Walkthrough/blob/master/pubspec.yaml) file.
+
+```yaml
+  dependencies:
+    flutter:
+      sdk: flutter
+    paystack_flutter:
+
 ## Connecting to Paystack
 First, you should create define your paystack variables `PAYSTACK_PUBLIC_KEY`  and `BACKEND_URL` like this :
    
    
 ```dart
  static const paystack_pub_key = "Your_Paystack_Public_Key";
-     static const paystack_backend_url = "https://infinite-peak-60063.herokuapp.com";
+ static const paystack_backend_url = "https://infinite-peak-60063.herokuapp.com";
 ```
 
 
