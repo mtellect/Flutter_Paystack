@@ -1,6 +1,6 @@
 # Paystack Flutter Plugin
 
-A Paystack Plugin for flutter developers for receiving payments online.
+A Paystack Plugin for flutter developers for receiving payments online(Android currently supported, still working on the ios).
 
 ## Getting Started
 
@@ -147,3 +147,4 @@ class _MyAppState extends State<MyApp> {
 ```
 
 
+"# Flutter_Paystack" 
