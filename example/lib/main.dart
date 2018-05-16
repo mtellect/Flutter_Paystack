@@ -14,7 +14,7 @@ class _MyAppState extends State<MyApp> {
   Map<String, dynamic> _data = {};
 
   static const platform = const MethodChannel('maugost.com/paystack_flutter');
-  static const paystack_pub_key = "pk_live_b8d88a59e41602f99bbccdfe40e0f6ebee8b22fc";
+  static const paystack_pub_key = "Your_paystack_public_key";
   static const paystack_backend_url =
       "https://infinite-peak-60063.herokuapp.com";
 
