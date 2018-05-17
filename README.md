@@ -14,11 +14,7 @@ For help on editing plugin code, view the [documentation](https://flutter.io/pla
 
 ## Usage
 
-[Example](https://github.com/iampawan/Flutter-Walkthrough/blob/master/example/example_app.dart)
-
 To use this package :
-
-* add the dependency to your [pubspec.yaml](https://github.com/iampawan/Flutter-Walkthrough/blob/master/pubspec.yaml) file.
 
 ```yaml
   dependencies:
@@ -37,54 +33,56 @@ First, you should create define your paystack variables `PAYSTACK_PUBLIC_KEY`  a
 
 
 After the variables have been defined create a new function or method `connectPaystack` which is used to initialize flutter channel :
-   
-```dart
-connectPaystack() async {
-    String result;
-    try {
-      result = await PaystackFlutter.connectToPaystack({
-        "NAME": "Your Name",
-        "EMAIL": "you@email.com",
-        "AMOUNT": 100,
-        "CURRENCY": "NGN",
-        "PAYMENT_FOR": "Testing API",
-        "PAYSTACK_PUBLIC_KEY":paystack_pub_key,
-        "BACKEND_URL": paystack_backend_url,
-      });
-    } on PlatformException catch (e) {
-      result = e.message;
-      print(e.message);
-    }
 
-    
-    if (!mounted) return;
-
-    setState(() {
-      transcation = result;
-    });
-}
+```yaml
+ connectPaystack() async {
+     String result;
+     try {
+       result = await PaystackFlutter.connectToPaystack({
+         "NAME": "Your Name",
+         "EMAIL": "you@email.com",
+         "AMOUNT": 100,
+         "CURRENCY": "NGN",
+         "PAYMENT_FOR": "Testing API",
+         "PAYSTACK_PUBLIC_KEY":paystack_pub_key,
+         "BACKEND_URL": paystack_backend_url,
+       });
+     } on PlatformException catch (e) {
+       result = e.message;
+       print(e.message);
+     }
+ 
+     
+     if (!mounted) return;
+ 
+     setState(() {
+       transcation = result;
+     });
+ }
 ```
+
+
 
 ## Paystack Channel Response codes
 
 Listen for response via the result, with the response you can do as use please
 
-```dart
-
-  } on PlatformException catch (e) {
-       result = e.message;
-       print(e.message);
-     }
-  
+```yaml
+ } on PlatformException catch (e) {
+        result = e.message;
+        print(e.message);
+}
 ```
 
-For Successufull transaction result is `SUCCESSFULL`
+
+For Successful transaction result is `SUCCESSFULL`
 For Failed transaction result is `UNSUCCESSFULL`
 
 
 ## Complete Code Setup example
 
-```dart
+```yaml
+ 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:paystack_flutter/paystack_flutter.dart';
@@ -160,8 +158,4 @@ class _MyAppState extends State<MyApp> {
     });
   }
 }
-
 ```
-
-
-"# Flutter_Paystack" 

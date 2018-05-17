@@ -1,6 +1,6 @@
 name: paystack_flutter
 description: A Paystack Plugin for flutter developers for receiving payments online.
-version: 0.0.1
+version: 0.0.2
 author: Maugost Okore <ammaugost@gmail.com>
 homepage: https://github.com/mtellect/Flutter_Paystack
 
